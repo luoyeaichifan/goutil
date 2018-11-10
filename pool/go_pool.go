@@ -6,7 +6,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/henrylee2cn/goutil/coarsetime"
+	"github.com/luoyeaichifan/goutil/coarsetime"
 )
 
 type (

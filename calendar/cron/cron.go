@@ -6,7 +6,7 @@ import (
 	"sort"
 	"time"
 
-	"github.com/henrylee2cn/goutil/calendar"
+	"github.com/luoyeaichifan/goutil/calendar"
 )
 
 // Cron keeps track of any number of entries, invoking the associated func as
@@ -246,7 +246,7 @@ func (c *Cron) Stop() {
 
 // entrySnapshot returns a copy of the current cron entry list.
 func (c *Cron) entrySnapshot() []*Entry {
-	entries := []*Entry{}
+	var entries []*Entry
 	for _, e := range c.entries {
 		entries = append(entries, &Entry{
 			Schedule: e.Schedule,
